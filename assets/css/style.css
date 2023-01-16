@@ -1,0 +1,226 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+  --dark-grey: #282b2e;
+  --light-blue: #8aacfa;
+  --dark-blue: #0e2169;
+  font-size: 10px;
+}
+
+body {
+  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0;
+  color: var(--gin);
+  /* background-color: var(--outer-space); */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-grey);
+}
+
+header h1 {
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+  padding: 0.5rem 0.5rem 0.5rem 5rem;
+  font-size: 3rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+header a {
+  color: var(--light-blue);
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.hero {
+  width: 100%;
+}
+
+main h2 {
+  position: relative;
+  margin: -6rem 5rem 1.5rem auto;
+  padding: 0.8rem;
+  width: fit-content;
+  font-size: 2rem;
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
+}
+
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.side-title {
+  flex: 0 0 15%;
+  text-align: end;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  border-right: var(--dark-blue) solid 2px;
+  padding-right: 2rem;
+}
+
+.content{
+  flex: 0 0 75%;
+  align-items: center;
+  padding: 2rem;
+}
+
+.content p {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  text-align: start;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.card-large{
+  display: flex;
+  flex: 2 0 98%;
+  height: 300px;
+  border: var(--light-blue) 0.5rem solid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.image-large {
+  flex: 0 0 100%;
+  opacity: 0.4;
+}
+
+.card-small {
+  display: flex;
+  flex: 1 0 47%;
+  height: 150px;
+  max-width: 47%;
+  border: var(--light-blue) 0.5rem solid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.image-small {
+  flex: 0 0 100%;
+  max-width: 100%;
+  opacity: 0.4;
+}
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  background-color: var(--light-blue);
+  color: black;
+  padding: 0.5rem;
+}
+
+.explanation h4 {
+  font-size: 1.5rem;
+  line-height: 0;
+  text-align: start;
+  color: var(--dark-blue);
+}
+
+.explanation p {
+  font-size: 1rem;
+  line-height: 0;
+  text-align: start;
+  color: var(--dark-blue);
+}
+
+.explanation a {
+  text-decoration: none;
+}
+
+
+.image-large:hover, .image-small:hover {
+  opacity: 0.6;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.links {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin: 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1.page-title {
+    width: 100vw;
+  }
+  
+  .navigation-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+    margin: -4rem 3rem 1.5rem auto;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  main h2 {
+    font-size: 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .side-title {
+    text-align: start;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-right: 0;
+    border-bottom: var(--dark-blue) solid 2px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
