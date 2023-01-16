@@ -8,14 +8,19 @@ Originally created for Module 2 challenge of UofT SCS Coding Boot Camp - Advance
 More contents and pages will be added as he learns new skills.
 
 
-## Installation
-
-N/A
-
-
 ## Usage
 
 Employers and classmates of the bootcamp can review his works and know his contact information. 
+
+
+## Live site
+
+https://shohei-mochizuki.github.io/challenge02/
+
+
+## Screenshot of the site
+
+![image](https://user-images.githubusercontent.com/121307266/212769948-75ade5f1-3fdb-41ff-a3ac-594589a9a24a.png)
 
 
 ## Credits
